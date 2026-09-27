@@ -28,7 +28,7 @@ The service provider and the `Sahifa` facade are registered automatically. To ch
 php artisan vendor:publish --tag=sahifa-config
 ```
 
-Requirements: PHP 8.1+, Laravel 10, 11 or 12.
+Requirements: PHP 8.2+, Laravel 12 or 13.
 
 ## Usage
 
