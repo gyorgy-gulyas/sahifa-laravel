@@ -1,0 +1,32 @@
+{
+    "name": "sahifa/laravel",
+    "description": "Laravel package for Sahifa: Arabic-ready HTML to PDF and screenshots, rendered in Saudi Arabia. Render Blade views to PDF without dompdf's Arabic problems.",
+    "keywords": ["laravel", "pdf", "html-to-pdf", "arabic", "rtl", "dompdf-alternative", "screenshot", "zatca", "invoice"],
+    "homepage": "https://sahifa.dev/en/docs",
+    "license": "MIT",
+    "authors": [{ "name": "Yimello LLC", "email": "support@sahifa.dev", "homepage": "https://sahifa.dev" }],
+    "support": { "email": "support@sahifa.dev", "issues": "https://github.com/gyorgy-gulyas/sahifa-laravel/issues", "docs": "https://sahifa.dev/en/docs" },
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "illuminate/http": "^10.0|^11.0|^12.0",
+        "illuminate/view": "^10.0|^11.0|^12.0",
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "phpunit/phpunit": "^10.5|^11.0"
+    },
+    "autoload": { "psr-4": { "Sahifa\\Laravel\\": "src/" } },
+    "autoload-dev": { "psr-4": { "Sahifa\\Laravel\\Tests\\": "tests/" } },
+    "extra": {
+        "laravel": {
+            "providers": ["Sahifa\\Laravel\\SahifaServiceProvider"],
+            "aliases": { "Sahifa": "Sahifa\\Laravel\\Facades\\Sahifa" }
+        }
+    },
+    "scripts": { "test": "phpunit" },
+    "config": { "sort-packages": true },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
