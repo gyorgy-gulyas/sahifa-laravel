@@ -141,3 +141,7 @@ Http::fake(['api.sahifa.dev/*' => Http::response('%PDF-1.7', 200)]);
 [Documentation](https://sahifa.dev/en/docs) · [Examples in five languages](https://github.com/gyorgy-gulyas/sahifa-examples) · [Pricing](https://sahifa.dev/en/#pricing) · Support: [support@sahifa.dev](mailto:support@sahifa.dev)
 
 MIT License. Sahifa is a service of Yimello LLC.
+
+## Author
+
+Gulyás György Tamás — [ggyt.hu](https://ggyt.hu/)
